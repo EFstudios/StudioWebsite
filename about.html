@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EF Studios</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/efHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html"><u>ABOUT</u></a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="pane">
+                    <div class = "container1">
+                        <div class="adm">
+                            <h1>ABOUT EF STUDIOS</h1>
+                            <br><br>
+                            <h3>EF Studio is a full service digital agency. We Make Great Websites. We take growing businesses to the next level, with our process, creativity and ongoing support.</h3>
+                            <br><br>
+                            <h3>We have worked on on web sites that vary from e-learning to games and surgical reporting, so a standard site or online store is not a problem! We take strategic approach, understanding your objectives, market and competitors, but we keep costs lean and add value wherever possible.</h3>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>

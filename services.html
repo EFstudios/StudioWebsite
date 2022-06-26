@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EF Studios</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/efHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html"><u>SERVICES</u></a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="pane">
+                    <div class = "container1">
+                        <div class="adm">
+                            <h1>EF STUDIOS SERVICES</h1>
+                            <br><br>
+                            <h3>Our Services include:</h3>
+                            <br>
+                            <h3>- Digital strategy and implementation</h3>
+                            <h3>- Website design & development</h3>
+                            <h3>- Content management in WordPress</h3>
+                            <h3>- Facebook pages and social media strategy</h3>
+                            <h3>- Email newsletters with CreateSend and MailChimp</h3>
+                            <h3>- Google adwords and Facebook advertising</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>

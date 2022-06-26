@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EF Studios</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/efHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html"><u>HOME</u></a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="homepane">
+                    <div class = "container1">
+                        <div class="adm">
+                            <h1>Do you want to be part of a better web world?</h1> 
+                            <h3>Let's team up and make great web stuff!</h3>
+                            <br><br>
+                            <img src="images/HomePic.PNG" alt="Pic1">
+                            <br><br><br><br>
+                            <h2>We put our hearts into every project</h1> 
+                            <br><br>
+                            <h4>We solve real problems through great user experiences. Every project is built to convert opportunities, be cost-effective and ensure your long-term success.</h3>
+                            <br><br>
+                            <h4>Passion for greatness comes in many shapes and forms. We are proud to work with clients from a diverse range of industries who care about their businesses.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>
